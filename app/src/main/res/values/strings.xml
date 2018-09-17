@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ACI News</string>
+    <string name="login_view">ACI News - Login</string>
+    <string name="create_an_event">Create an New Event</string>
+    <string name="calendar">Calendar</string>
+    <string name="event_description">Event Description</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="e_mail">E-Mail:</string>
+    <string name="password">Password:</string>
+    <string name="forgot_your_password">Forgot your password</string>
+    <string name="todo">TODO</string>
+</resources>
