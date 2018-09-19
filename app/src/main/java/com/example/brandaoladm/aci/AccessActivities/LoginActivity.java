@@ -23,22 +23,36 @@ public class LoginActivity extends AppCompatActivity {
     private Button btn_login;
     private Button btn_signup;
     private Button btn_forgot_psswrd;
+    private EditText username;
+    private EditText password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         btn_login = (Button) findViewById(R.id.btnlogin);
         btn_signup = (Button) findViewById(R.id.btnsignup);
         btn_forgot_psswrd = (Button) findViewById(R.id.btnforgotpsswrd);
+        username = (EditText) findViewById(R.id.lblusername);
+        password = (EditText) findViewById(R.id.lblpsswd);
+
+        //SignupActivity signup = new SignupActivity();
 
         btn_login.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,CalendarActivity.class);
-                startActivity(intent);
+
+                //for (int i = 0; i <signup.usernames.size(); i++) {
+                    //if(signup.usernames.get(i) == "abc") {
+
+                        if(username.getText().toString().equals("brandaoladm") && password.getText().toString().equals("12345")) {
+                            Intent intent = new Intent(LoginActivity.this,CalendarActivity.class);
+                            startActivity(intent);
+                        }
+
+                  //  }
+               // }
             }
         });
 
